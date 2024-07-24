@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- header -->
-    <div class="w-100 main-section">
+    <div class="w-100 main-section " id="home">
       <div class="w-100 d-flex justify-content-center">
         <nav class="navbar navbar-expand-lg header mt-4">
           <div class="container-fluid">
@@ -50,7 +50,7 @@
                         <a class="nav-link text-white" href="#projects">Projects</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Contact</a>
+                        <a class="nav-link text-white" href="#contact">Contact</a>
                       </li>
                 </div>
 
@@ -79,7 +79,7 @@
       
        </div>
       </div>
-      <h1 class="text-white name" id="home">Nourhan <span class="last-name">Mahmoud</span></h1>
+      <h1 class="text-white name" >Nourhan <span class="last-name">Mahmoud</span></h1>
       <div class="d-flex discription">
         <div class="">
           <div class="line"></div>
@@ -167,14 +167,14 @@
     <!-- Projects -->
     <div class="projects-section" id="projects">
         <h1 class="projects-header text-white text-center pt-5" >MY Projects</h1>
-        <div class="container d-flex flex-column my-5 gap-5 py-5">
+        <div class="container d-flex flex-column gap-5 py-5">
 
-            <div class="project1">         
-                <a href="https://cara-e-commerce-website.vercel.app/" target="_blank">
-                    <img src="My Personal Portfolio (Community)/project1.png" width="45%" class="project wow animate__animated animate__slideInLeft" data-wow-duration="2s"></img>
-                </a>
-                <img src="My Personal Portfolio (Community)/dot pattern.png" class="dotpattern-image-right" alt="">
-            </div>
+          <div class="project5 ">
+            <a href="https://aflamek.vercel.app/" target="_blank">
+                <img src="My Personal Portfolio (Community)/project5.png" width="45%" class="project  wow animate__animated animate__slideInLeft" data-wow-duration="2s"></img>
+            </a>
+            <img src="My Personal Portfolio (Community)/dot pattern.png" class="dotpattern-image-right" alt="">
+        </div>
 
             <div class="project2 text-end">
                 <img src="My Personal Portfolio (Community)/dot pattern.png" class="dotpattern-image-left" alt="">
@@ -197,15 +197,40 @@
                 </a>  
             </div>
 
-            <div class="project5 ">
-                <a href="https://aflamek.vercel.app/" target="_blank">
-                    <img src="My Personal Portfolio (Community)/project5.png" width="45%" class="project  wow animate__animated animate__slideInLeft" data-wow-duration="2s"></img>
-                </a>
-                <img src="My Personal Portfolio (Community)/dot pattern.png" class="dotpattern-image-right" alt="">
-            </div>
+            
+            <div class="project1">         
+              <a href="https://cara-e-commerce-website.vercel.app/" target="_blank">
+                  <img src="My Personal Portfolio (Community)/project1.png" width="45%" class="project wow animate__animated animate__slideInLeft" data-wow-duration="2s"></img>
+              </a>
+              <img src="My Personal Portfolio (Community)/dot pattern.png" class="dotpattern-image-right" alt="">
+          </div>
         </div>
 
     </div>
+
+     <!-- contact -->
+
+     <section id="contact" class="contact-section ">
+      <h1 class="text-center text-white pt-5 contact-header">Contact Me</h1>
+     <div class="d-flex justify-content-center align-items-center mt-4">
+      <form id="contact-form" class="d-flex flex-column">
+        <label for="name">Name:</label>
+        <input type="text" id="from_name" name="from_name" class="input" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="from_email" name="from_email" class="input" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit" class="send-btn">Send</button>
+    </form>
+     </div>
+  </section>
+
+  <footer class="p-4 text-center text-light">
+    <div>© All right reserved by Nourhan Mahmoud</div>
+  </footer>
 
 
     <script src="js/wow.min.js" ></script>
@@ -213,6 +238,8 @@
         new WOW().init();
     </script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="js/main.js"></script>
    
 </body>
 </html>
